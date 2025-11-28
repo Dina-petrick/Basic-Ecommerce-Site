@@ -1,13 +1,18 @@
-// App Logic
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('App initialized');
-
+window.addEventListener("load", function () {
+  console.log("All page content is fully loaded");
     window.ReWebSDK.customEvent({eventName:"test"})
     var location = { 
         latitude: 13.067439, 
         longitude: 80.237617 
         } 
     window.ReWebSDK.userLocation(location); 
+});
+
+// App Logic
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('App initialized');
+
+
 
     
     // Login Logic
@@ -28,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 
 
