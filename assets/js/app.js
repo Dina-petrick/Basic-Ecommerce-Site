@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         longitude: 80.237617 
         } 
     window.ReWebSDK.userLocation(location); 
+    window.ReWebSDK.customEvent({eventName:"test"})
     
     // Login Logic
     const loginForm = document.getElementById('loginForm');
@@ -27,4 +28,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
